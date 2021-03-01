@@ -1,0 +1,199 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Purchase Component */
+.purchase {
+  width: 50%;
+  margin: 10rem auto;
+}
+.purchase h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  color: #4e598c;
+  text-align: left;
+}
+
+.tab-list {
+  /* border-bottom: 2px solid #000; */
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -6px;
+  /* padding: 0.5rem 1.5rem; */
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 39px;
+  color: #bdbdbd;
+  width: calc(100% / 3);
+}
+
+.tab-list-active {
+  color: #f2994a;
+}
+.tab-list-item .underline {
+  border: 0.1px solid black;
+  margin: 10px 0;
+}
+.tab-list-active .underline {
+  margin: 6px 0;
+  border: 5px solid #f2994a;
+  border-radius: 10px;
+}
+
+/* CompletedPayment and PaymentCancelled Components */
+.white-bgd {
+  background-color: #fff;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.payment-modal {
+  width: 40%;
+  margin: 20rem auto;
+  padding: 4rem 8rem 5rem;
+  flex-direction: column;
+  text-align: left;
+  box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+  border-radius: 10px;
+}
+h1.title {
+  color: #4e598c;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 67px;
+  margin-top: 0.1rem;
+}
+p,
+a {
+  font-size: 20px;
+  line-height: 30px;
+  color: #4f4f4f;
+  margin: 2rem 0;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration-line: underline;
+  color: #f2994a;
+}
+span i {
+  align-self: center;
+  justify-content: center;
+}
+#completed-purchase span i {
+  color: #6fcf97;
+}
+#cancelled-payment span i {
+  color: tomato;
+}
+span.payment-resolution-icon {
+  height: 84px;
+  width: 84px;
+  border-radius: 50%;
+  box-shadow: 0px 6px 10px #211e4314;
+  margin: 0 auto;
+}
+
+.form-control {
+  text-align: left;
+}
+.form-control label {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  text-align: left;
+  padding-bottom: 40px;
+}
+.form-control label.input-note {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #817e9e;
+}
+.form-control {
+  margin-top: 30px;
+}
+.form-control input {
+  margin: 20px 0;
+  font-size: 16px;
+}
+.width-100 {
+  width: 100%;
+}
+.input {
+  border: 1px solid #4e598c;
+  border-radius: 10px;
+  height: 64px;
+}
+
+.button-div {
+  margin-top: 30px;
+  text-align: left;
+}
+.button-div a:link,
+.button-div a:visited,
+.button-div a:hover,
+.button-div a:active {
+  text-decoration-line: none;
+  color: #494542;
+}
+/* Button */
+button {
+  background: linear-gradient(180deg, #f2c94c 0%, #f2994a 100%);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 110px;
+  border: unset;
+  margin-right: 50px;
+}
+@media screen and (max-width: 768px) {
+  button {
+    margin-right: unset;
+  }
+}

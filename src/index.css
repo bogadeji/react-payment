@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-image: url("./assets/images/Vector55.svg");
+
+  background-position: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 90vh;
+  background-color: #fff;
+}
+
+code {
+  font-family: "Roboto", sans-serif;
+}
