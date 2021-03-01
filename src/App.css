@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -37,9 +39,17 @@
   }
 }
 
+.payment-modal {
+  margin: 20rem auto;
+  padding: 4rem 8rem 5rem;
+  flex-direction: column;
+  text-align: left;
+  box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+  border-radius: 10px;
+}
+
 /* Purchase Component */
 .purchase {
-  width: 50%;
   margin: 10rem auto;
 }
 .purchase h1 {
@@ -90,7 +100,6 @@
   justify-content: center;
 }
 .payment-modal {
-  width: 40%;
   margin: 20rem auto;
   padding: 4rem 8rem 5rem;
   flex-direction: column;
@@ -106,8 +115,8 @@ h1.title {
   line-height: 67px;
   margin-top: 0.1rem;
 }
-p,
-a {
+#completed-purchase p,
+#completed-purchase a {
   font-size: 20px;
   line-height: 30px;
   color: #4f4f4f;
@@ -168,7 +177,7 @@ span.payment-resolution-icon {
 .input {
   border: 1px solid #4e598c;
   border-radius: 10px;
-  height: 64px;
+  height: 60px;
 }
 
 .button-div {
@@ -180,7 +189,8 @@ span.payment-resolution-icon {
 .button-div a:hover,
 .button-div a:active {
   text-decoration-line: none;
-  color: #494542;
+  color: #4e598c;
+  font-weight: bold;
 }
 /* Button */
 button {
@@ -190,10 +200,73 @@ button {
   font-size: 18px;
   padding: 20px 110px;
   border: unset;
-  margin-right: 50px;
+  margin-right: 90px;
 }
 @media screen and (max-width: 768px) {
   button {
     margin-right: unset;
+  }
+}
+
+/* Confirm Payment Component */
+.table {
+  margin: 60px 0;
+  padding-bottom: 20px;
+  border-radius: 16px 10px 10px 10px;
+  background: #ffffff;
+  box-shadow: 0px 10px 15px rgba(33, 30, 67, 0.08);
+}
+.table > div {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.table-header {
+  background-color: #2f80ed;
+  border-radius: 16px 10px 0 0;
+}
+.table-header p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+.table hr {
+  border-bottom: 1px solid #817e9e;
+  width: 85%;
+}
+.item-list {
+  padding-top: 30px;
+}
+.item-list p,
+.total p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.item-list p {
+  color: #4e598c;
+  margin: 30px 0;
+}
+.total > div {
+  border: 1px solid #817e9e;
+  box-sizing: border-box;
+  border-radius: 5px;
+  /* width: 90%; */
+  margin: 40px -30px;
+  padding: 0 30px;
+}
+.total-text {
+  color: #817e9e;
+}
+.bold {
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .table > div {
+    padding: 0 30px;
   }
 }

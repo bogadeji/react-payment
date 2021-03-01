@@ -1,20 +1,40 @@
 import React, { Component } from 'react'
 
 export class ConfirmPayment extends Component {
-  continue = e => {
-    e.preventDefault();
-    this.props.nextStep();
-  }
+ 
 
   render() {
     return (
-      <div>
-        <h1>Hell0</h1>
+      <section>
+        <div className="table">
+          <div className="table-header space-between">
+            <p>Item Name</p>
+            <p>Price</p>
+          </div>
+          <div className="item-list">
+            <div className="item space-between">
+              <p>Data science and usability</p>
+              <p className="bold">50,000.00</p>
+            </div>
+            <div className="item space-between">
+              <p>Shipping</p>
+              <p className="bold">0.00</p>
+            </div>
+          </div>
+          <hr />
+          <div className="total">
+            <div className=" space-between">
+              <p className="total-text">Total</p>
+              <p className="bold">50,000.00</p>
+            </div>
+            
+          </div>
+        </div>
         <div className="button-div">
-          <button onClick={this.continue}>Pay</button>
+          <button onClick={}>Pay</button>
           <a href="#purchase">Cancel Payment</a>
-        </div> 
-      </div>
+        </div>
+      </section>
     )
   }
 }
