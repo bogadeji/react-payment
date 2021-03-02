@@ -31,7 +31,7 @@ export class ConfirmPayment extends Component {
           </div>
         </div>
         <div className="button-div">
-          <button onClick={}>Pay</button>
+          <button >Pay</button>
           <a href="#purchase">Cancel Payment</a>
         </div>
       </section>

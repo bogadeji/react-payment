@@ -5,10 +5,6 @@ export class BillingInfo extends Component {
     e.preventDefault();
     this.props.nextStep();
   }
-  back = e => {
-    e.preventDefault();
-    this.props.prevStep();
-  }
   render() {
     const { values, handleChange } = this.props
   
@@ -16,38 +12,38 @@ export class BillingInfo extends Component {
       <section label="Billing Info">
           <div className="form-control">
           <label htmlFor="name-on-card">
-            Name on Card
+            Name on Card <sup>*</sup>
           </label><br />
           <input type="text" id="name-on-card" className="input width-100" onChange={handleChange('nameOnCard')} defaultValue={values.nameOnCard}/>
         </div>
           <div className="form-control">
           <label htmlFor="card-type">
-            Card Type
+            Card Type <sup>*</sup>
           </label><br />
           <input type="text" id="card-type" className="input width-100" onChange={handleChange('cardType')} defaultValue={values.cardType}/>
         </div>
-        <div>
+        <div className="card-grid">
           <div className="form-control">
             <label htmlFor="card-details">
-              Card details
+              Card details <sup>*</sup>
             </label><br />
-            <input type="text" id="address1" className="input" onChange={handleChange('cardDetails')} defaultValue={values.cardDetails}/>
+            <input type="text" id="address1" className="input width-100" onChange={handleChange('cardDetails')} defaultValue={values.cardDetails}/>
           </div>
           <div className="form-control">
             <label htmlFor="expiry">
-              Expiry Date
+              Expiry Date <sup>*</sup>
             </label><br />
-            <input type="text" id="expiry" className="input" onChange={handleChange('expiry')} defaultValue={values.expiry}/>
+            <input type="text" id="expiry" className="input width-100" onChange={handleChange('expiry')} defaultValue={values.expiry}/>
           </div>
           <div className="form-control">
             <label htmlFor="cvv">
-              CVV
+              CVV <sup>*</sup>
             </label><br />
-            <input type="text" id="cvv"className="input"  onChange={handleChange('cvv')} defaultValue={values.cvv}/>
+            <input type="text" id="cvv"className="input width-100"  onChange={handleChange('cvv')} defaultValue={values.cvv}/>
           </div>
         </div>
         <div className="button-div">
-          <button onClick={this.continue}>Next</button>
+          <button>Next</button>
           <a href="#purchase">Cancel Payment</a>
         </div>   
       </section>

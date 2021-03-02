@@ -4,6 +4,17 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1183px) {
+  .App {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .App {
+    width: 91%;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -39,6 +50,9 @@
   }
 }
 
+label sup {
+  color: #eb5757;
+}
 .payment-modal {
   margin: 20rem auto;
   padding: 4rem 8rem 5rem;
@@ -52,6 +66,11 @@
 .purchase {
   margin: 10rem auto;
 }
+@media (max-width: 768px) {
+  .purchase {
+    margin: 5rem auto;
+  }
+}
 .purchase h1 {
   font-weight: bold;
   font-size: 36px;
@@ -59,24 +78,44 @@
   color: #4e598c;
   text-align: left;
 }
-
+@media (max-width: 960px) {
+  .purchase h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .purchase h1 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
 .tab-list {
-  /* border-bottom: 2px solid #000; */
   padding-left: 0;
+  text-align: left;
 }
 
 .tab-list-item {
   display: inline-block;
   list-style: none;
   margin-bottom: -6px;
-  /* padding: 0.5rem 1.5rem; */
   font-weight: bold;
   font-size: 24px;
   line-height: 39px;
   color: #bdbdbd;
   width: calc(100% / 3);
 }
-
+@media (max-width: 768px) {
+  .tab-list-item {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 339px) {
+  .tab-list-item {
+    font-size: 1.2rem;
+  }
+}
 .tab-list-active {
   color: #f2994a;
 }
@@ -169,7 +208,8 @@ span.payment-resolution-icon {
 }
 .form-control input {
   margin: 20px 0;
-  font-size: 16px;
+  /* font-size: 16px;
+  padding: 0 20px; */
 }
 .width-100 {
   width: 100%;
@@ -177,9 +217,29 @@ span.payment-resolution-icon {
 .input {
   border: 1px solid #4e598c;
   border-radius: 10px;
-  height: 60px;
+  height: 50px;
 }
-
+.city-grid {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  column-gap: 40px;
+}
+@media (max-width: 360px) {
+  .city-grid {
+    display: block;
+  }
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  column-gap: 40px;
+  max-width: 100%;
+}
+@media (max-width: 560px) {
+  .card-grid {
+    display: block;
+  }
+}
 .button-div {
   margin-top: 30px;
   text-align: left;
@@ -204,7 +264,13 @@ button {
 }
 @media screen and (max-width: 768px) {
   button {
-    margin-right: unset;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 560px) {
+  button {
+    padding: 13px 50px;
+    margin-right: 30px;
   }
 }
 
@@ -235,6 +301,12 @@ button {
   font-size: 20px;
   line-height: 30px;
 }
+@media (max-width: 768px) {
+  .table-header p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
 .table hr {
   border-bottom: 1px solid #817e9e;
   width: 85%;
@@ -246,10 +318,20 @@ button {
 .total p {
   font-size: 20px;
   line-height: 30px;
+  color: #4e598c;
 }
 .item-list p {
-  color: #4e598c;
   margin: 30px 0;
+}
+@media (max-width: 768px) {
+  .item-list p,
+  .total p {
+    font-size: 0.8rem;
+    line-height: 2rem;
+  }
+  .item-list p {
+    margin: 5px 0;
+  }
 }
 .total > div {
   border: 1px solid #817e9e;
@@ -267,6 +349,12 @@ button {
 }
 @media screen and (max-width: 768px) {
   .table > div {
-    padding: 0 30px;
+    padding: 0 20px;
+  }
+  .table hr {
+    width: 97%;
+  }
+  .total > div {
+    margin: 40px -10px;
   }
 }
